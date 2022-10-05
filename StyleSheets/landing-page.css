@@ -218,11 +218,11 @@ body {
 
 .welcome-quote .svg-wrapper {
     height: 8em;
-    width: 20em;
+    width: 23em;
 }
 
 .welcome-quote .landing-page__nav__links {
-    font-size: 1.5em
+    font-size: 1.3em;
 }
 
 .welcome-quote .shape {
@@ -244,8 +244,6 @@ body {
 .welcome-quote__bookNow:hover stop:last-child {
     stop-color: rgba(156, 164, 166, 0.01);
 }
-
-
 
 /**wirkt sobald dies größer als 800px ist */
 @media (min-width: 1180px) {
@@ -269,5 +267,11 @@ body {
         align-items: flex-start;
         gap: 1.2rem;
 
+    }
+}
+
+@media (max-width: 930px) {
+    .welcome-quote .landing-page__nav__links {
+        font-size: 1.1em;
     }
 }
