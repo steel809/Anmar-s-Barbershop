@@ -1,0 +1,273 @@
+*,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size_: 1.3rem;
+}
+
+
+.logo img {
+    height: 3rem;
+
+}
+
+.logo {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+
+.landing-page {
+    /* background-color: rgb(102, 108, 108); */
+    height: auto;
+    text-align: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url('../img/ShowingScissors.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.landing-page__navButton {
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+}
+
+
+.nav {
+    display: block;
+    width: 100%;
+    /*!responsive aspekte */
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav div {
+    margin: 1em auto;
+}
+
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__item {
+    margin-top: .5em;
+}
+
+.landing-page__nav__links {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    line-height: 2em;
+    font-weight: 900;
+    font-size: 1.125rem;
+}
+
+.landing-page__nav__links:hover,
+.landing-page__nav__links:focus {
+    opacity: .75;
+}
+
+/* navlist zentrieren und nach rechts pushen */
+.nav__list--primary {
+    margin: 0 auto;
+    margin-left: auto;
+}
+
+.nav__list--secondary {
+    padding: 0 1.2em;
+}
+
+/**responsive design mit hamburger */
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 4em;
+    height: 4em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #d3ba60d1;
+    color: white;
+    transition: opacity 250ms ease;
+
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+
+.welcome-quote__place-for-men {
+    color: #fff;
+    font-family: "Julius Sans One";
+    font-weight: 600;
+    letter-spacing: 8px;
+    font-size: 5vw;
+    line-height: 1.2;
+    margin-top: 2em;
+}
+
+.welcome-quote__place-for-men span {
+    color: #d3ba60d1;
+}
+
+.active .text a {
+    color: #d3ba60d1;
+}
+
+.active .shape {
+    stroke: #d3ba60d1;
+}
+
+.svg-wrapper {
+    height: 3rem;
+    width: 11rem;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    position: absolute;
+    width: 100%;
+}
+
+.shape {
+    stroke-dasharray: -20;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #fff;
+    border-bottom: 5px solid #d3ba60d1;
+    transition: stroke-width 0.5s,
+        stroke-dashoffset 1s,
+        stroke-dasharray 1s;
+}
+
+.svg-wrapper:hover .shape,
+.svg-wrapper:focus .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 50%;
+    stroke-dasharray: 1020;
+
+    text-shadow: 0 0.1em 0.1em rgb(15, 15, 15);
+}
+
+.welcome-quote {
+    padding-bottom: 2em;
+}
+
+.welcome-quote__bookNow {
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+.welcome-quote .svg-wrapper {
+    height: 8em;
+    width: 20em;
+}
+
+.welcome-quote .landing-page__nav__links {
+    font-size: 1.5em
+}
+
+.welcome-quote .shape {
+    stroke-dasharray: -20;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+    fill: url(#gradient-example);
+    stroke: #d3ba60d1;
+    transition: stroke-width 0.5s,
+        stroke-dashoffset 1s,
+        stroke-dasharray 1s,
+        fill 1s;
+}
+
+.welcome-quote__bookNow:hover stop:first-child {
+    stop-color: rgba(179, 159, 85, 0.452);
+}
+
+.welcome-quote__bookNow:hover stop:last-child {
+    stop-color: rgba(156, 164, 166, 0.01);
+}
+
+
+
+/**wirkt sobald dies größer als 800px ist */
+@media (min-width: 1180px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        /*!responsive aspekte */
+        visibility: visible;
+        height: auto;
+        position: relative;
+    }
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2rem;
+
+    }
+}
