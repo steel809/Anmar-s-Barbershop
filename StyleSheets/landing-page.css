@@ -11,8 +11,7 @@ body {
 
 
 .logo img {
-    height: 3rem;
-
+    height: 6vh;
 }
 
 .logo {
@@ -44,6 +43,7 @@ body {
 .landing-page__navButton {
     display: flex;
     align-items: center;
+
     padding-top: 2em;
 }
 
@@ -55,10 +55,12 @@ body {
     visibility: hidden;
     height: 0;
     position: absolute;
+
+    margin-top: 2em;
 }
 
 .nav div {
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
 
@@ -69,7 +71,7 @@ body {
 }
 
 .nav__item {
-    margin-top: .5em;
+    padding-top: .5rem;
 }
 
 .landing-page__nav__links {
@@ -262,16 +264,33 @@ body {
         position: relative;
     }
 
-    .row {
+    .landing-page .row {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 1.2rem;
 
     }
+
+    .nav__item {
+        padding-top: 0;
+    }
+
 }
 
 @media (max-width: 930px) {
     .welcome-quote .landing-page__nav__links {
         font-size: 1.1em;
     }
+}
+
+@media (max-width: 430px) {
+    .welcome-quote .svg-wrapper {
+        height: 8em;
+        width: 15em;
+    }
+
+    .welcome-quote .landing-page__nav__links {
+        font-size: 1.2em;
+    }
+
 }
