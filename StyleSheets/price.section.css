@@ -61,13 +61,13 @@ colgroup:nth-child(3) {
     max-width: 3em;
 }
 
-tbody tr:nth-child(even) th{
+tbody tr:nth-child(even) th {
     background: linear-gradient(to right, #fff 0%, #798da344 50%);
 
     border-width: 1px 0 1px 1px;
 }
 
-tbody tr:nth-child(even) td{
+tbody tr:nth-child(even) td {
     background: linear-gradient(to right, #798da344 40%, #798da344 100%);
 
     border-width: 1px 0 1px 1px;
@@ -103,7 +103,7 @@ tbody tr td:nth-child(3) {
 
 .prices__ad {
     font-family: 'Montserrat';
-    color: red;
+    color: #798da3;
     position: absolute;
     margin: 0 auto;
     font-size: 0.9em;
@@ -159,6 +159,7 @@ th svg {
         padding: 0.6em;
         max-width: 5.5em;
     }
+
     .prices__ad {
         font-size: 0.95em;
     }

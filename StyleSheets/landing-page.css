@@ -175,7 +175,7 @@ body {
     width: 11rem;
     display: flex;
     align-items: center;
-
+    cursor: pointer;
     position: relative;
 }
 
@@ -242,6 +242,7 @@ body {
         stroke-dashoffset 1s,
         stroke-dasharray 1s,
         fill 1s;
+
 }
 
 .welcome-quote__bookNow:hover stop:first-child {
