@@ -42,15 +42,11 @@ colgroup:nth-child(3) {
 }
 
 .AllPrices thead th {
-    /* background: -moz-linear-gradient(top, #fff 0%, #798da344 100%);
-    background: -webkit-linear-gradient(top, #fff 0%, #798da344 100%);
-    background: -o-linear-gradient(top, #fff 0%, #798da344 100%); */
-    background: linear-gradient(to bottom, #fff 0%, #798da344 130%);
+    background: linear-gradient(to bottom, #fff 20%, #798da344 100%);
 
     text-align: center;
     border-bottom: 2px solid #798da344;
     font-weight: 400px;
-    /* Wichtig für Hervorhebung: */
 }
 
 .AllPrices thead th:nth-child(1) {
@@ -59,30 +55,36 @@ colgroup:nth-child(3) {
 
 .AllPrices thead th h2 {
     font-weight: 400px;
-    font-size: 1.4em;
+    font-size: 1.18em;
     line-height: 1.2;
     color: #050303;
-    max-width: 4em;
+    max-width: 3em;
 }
 
-tbody tr:nth-child(even) th,
-tbody tr:nth-child(even) td {
-    background: #798da344;
-    background: linear-gradient(to right, #fff 0%, #798da344 130%);
+tbody tr:nth-child(even) th{
+    background: linear-gradient(to right, #fff 0%, #798da344 50%);
 
     border-width: 1px 0 1px 1px;
 }
 
+tbody tr:nth-child(even) td{
+    background: linear-gradient(to right, #798da344 40%, #798da344 100%);
+
+    border-width: 1px 0 1px 1px;
+}
+
+
 thead th:nth-child(3) h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #b39f55;
-    padding: 0.6em;
-    max-width: 7em;
+    padding: 0.4em;
+    max-width: 4em;
+    margin: 0 auto;
 }
 
 thead th:nth-child(3),
 tbody tr td:nth-child(3) {
-    background: linear-gradient(to bottom, #fff 0%, #b39f5561 100%);
+    background: linear-gradient(to top, #fff 20%, #b39f5561 210%);
 }
 
 /**Hervorhebung */
@@ -104,12 +106,12 @@ tbody tr td:nth-child(3) {
     color: gray;
     position: absolute;
     margin: 0 auto;
-    font-size: 1.3em;
+    font-size: 0.9em;
 }
 
 th svg {
-    fill: white;
-    width: 11em;
+    fill: #798da344;
+    width: 6em;
     height: auto;
 }
 

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./StyleSheets/landing-page.css">
     <link rel="stylesheet" href="./StyleSheets/first-section.css">
     <link rel="stylesheet" href="./StyleSheets/second-section.css">
-    <link rel="stylesheet" href="./StyleSheets/social-media-section.css">
     <link rel="stylesheet" href="./StyleSheets/price.section.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
@@ -115,7 +114,9 @@
                     iure dicta maxime, praesentium
                     vitae minus temporibus numquam rerum cum aliquam. Ipsum repudiandae dicta labore!</p>
 
-                    <div class="social-media-logos">
+                <div class="social-media">
+                    <div class="social_media__All">
+
                         <a href="https://www.instagram.com" target="_blank">
                             <img src="img/instagram-2.png" alt="instagram icon">
                         </a>
@@ -124,9 +125,10 @@
                         </a>
 
                     </div>
+                </div>
             </div>
             <div class="col">
-                <img src="img/TeamPic.jpg" alt="TeamPicture">
+                <img class="TeamPicture" src="img/TeamPic.jpg" alt="TeamPicture">
             </div>
         </div>
     </section>
@@ -164,21 +166,6 @@
         </div>
     </section>
 
-    <section class="social-media-section center">
-        <div class="container">
-            <h2 class="section-title">Galerie & Social Media</h2>
-            <div class="social-media-logos">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="img/instagram-2.png" alt="instagram icon">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="img/facebook.png" alt="facebook Icon">
-                </a>
-
-            </div>
-        </div>
-    </section>
-
     <section class="price-section center">
         <div class="container">
             <h2 class="section-title">Preise</h2>
@@ -211,11 +198,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th>Herren</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
+                                <div class="farbig">
+                                    <tr>
+                                        <th>Herren</th>
+                                        <td>20€</td>
+                                        <td>30€</td>
+                                    </tr>
+                                </div>
                                 <tr>
                                     <th>Studenten/Rentner</th>
                                     <td>20€</td>

@@ -191,7 +191,7 @@ body {
 .shape {
     stroke-dasharray: -20;
     stroke-dashoffset: 0;
-    stroke-width: 8px;
+    stroke-width: 2px;
     fill: transparent;
     stroke: #fff;
     border-bottom: 5px solid #d3ba60d1;
@@ -202,11 +202,16 @@ body {
 
 .svg-wrapper:hover .shape,
 .svg-wrapper:focus .shape {
-    stroke-width: 2px;
+    stroke-width: 8px;
     stroke-dashoffset: 50%;
-    stroke-dasharray: 1020;
+    stroke-dasharray: 1400;
 
     text-shadow: 0 0.1em 0.1em rgb(15, 15, 15);
+}
+
+.welcome-quote .svg-wrapper:hover .shape,
+.welcome-quote .svg-wrapper:focus .shape {
+    stroke-width: 10px;
 }
 
 .welcome-quote {
@@ -230,7 +235,7 @@ body {
 .welcome-quote .shape {
     stroke-dasharray: -20;
     stroke-dashoffset: 0;
-    stroke-width: 8px;
+    stroke-width: 6px;
     fill: url(#gradient-example);
     stroke: #d3ba60d1;
     transition: stroke-width 0.5s,
