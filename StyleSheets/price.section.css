@@ -1,5 +1,5 @@
 .price-section {
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.113);
 }
 
 .AllPrices {
@@ -103,7 +103,7 @@ tbody tr td:nth-child(3) {
 
 .prices__ad {
     font-family: 'Montserrat';
-    color: gray;
+    color: red;
     position: absolute;
     margin: 0 auto;
     font-size: 0.9em;
@@ -138,7 +138,6 @@ th svg {
 
     .prices__ad {
         font-size: 0.3em;
-        color: white;
     }
 
     .AllPrices th,

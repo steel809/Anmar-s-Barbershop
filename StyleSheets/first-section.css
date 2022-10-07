@@ -1,5 +1,6 @@
 .first-section {
-    margin-top: 2em;
+
+    background-color: rgba(128, 128, 128, 0.113);
 }
 
 .first-section .row {
@@ -67,7 +68,7 @@
 }
 
 .social_media__All {
-    margin: 0 auto
+    margin: 1em auto
 }
 
 .social_media__All a {
@@ -126,5 +127,10 @@
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0.125em;
+    }
+
+    .first-section__text {
+        text-align: center;
+        margin: 1em auto;
     }
 }
