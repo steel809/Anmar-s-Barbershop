@@ -1,20 +1,9 @@
-.social-media-section {
-    margin-top: 2em;
-    padding: 1em 0;
-    text-align: center;
-
-}
-
-.social-media-section img {
-    width: 4em;
+.social-media-logos img {
+    width: 2.5em;
 }
 
 .social-media-logos {
-    display: flex;
-    justify-content: space-between;
     margin: 2em auto;
-    width: 15%;
+    padding-left: 1em;
+    padding-right: 1em;
 }
-
-
-

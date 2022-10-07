@@ -1,0 +1,164 @@
+.price-section {
+    background-color: white;
+}
+
+.AllPrices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.price__element {
+    margin: 0 auto;
+}
+
+.price__element+.price__element {
+    margin-left: 4em;
+}
+
+.AllPrices .row {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.AllPrices table {
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.AllPrices th,
+.AllPrices td {
+    font-size: .875em;
+    line-height: 1.45em;
+    padding: 0.8em;
+}
+
+
+colgroup:nth-child(3) {
+    border: 4px solid #b39f55;
+}
+
+.AllPrices thead th {
+    /* background: -moz-linear-gradient(top, #fff 0%, #798da344 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #798da344 100%);
+    background: -o-linear-gradient(top, #fff 0%, #798da344 100%); */
+    background: linear-gradient(to bottom, #fff 0%, #798da344 130%);
+
+    text-align: center;
+    border-bottom: 2px solid #798da344;
+    font-weight: 400px;
+    /* Wichtig für Hervorhebung: */
+}
+
+.AllPrices thead th:nth-child(1) {
+    background: transparent;
+}
+
+.AllPrices thead th h2 {
+    font-weight: 400px;
+    font-size: 1.4em;
+    line-height: 1.2;
+    color: #050303;
+    max-width: 4em;
+}
+
+tbody tr:nth-child(even) th,
+tbody tr:nth-child(even) td {
+    background: #798da344;
+    background: linear-gradient(to right, #fff 0%, #798da344 130%);
+
+    border-width: 1px 0 1px 1px;
+}
+
+thead th:nth-child(3) h2 {
+    font-size: 1.5em;
+    color: #b39f55;
+    padding: 0.6em;
+    max-width: 7em;
+}
+
+thead th:nth-child(3),
+tbody tr td:nth-child(3) {
+    background: linear-gradient(to bottom, #fff 0%, #b39f5561 100%);
+}
+
+/**Hervorhebung */
+
+
+.AllPrices .master-barber {
+    padding: 0;
+}
+
+.special-moments {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.prices__ad {
+    font-family: 'Montserrat';
+    color: gray;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+th svg {
+    fill: white;
+    width: 11em;
+    height: auto;
+}
+
+
+
+@media (max-width: 1055px) {
+    .AllPrices .row {
+        flex-direction: column;
+        margin: 1.5em 0;
+    }
+
+    .price__element+.price__element {
+        margin-left: 0;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 450px) {
+
+    th svg {
+        width: 7em;
+        height: auto;
+    }
+
+    .prices__ad {
+        font-size: 0.3em;
+        color: white;
+    }
+
+    .AllPrices th,
+    .AllPrices td {
+        font-size: .765em;
+        line-height: 1.45em;
+        padding: 0.5em;
+    }
+
+    .AllPrices thead th h2 {
+        font-size: 1.2em;
+        line-height: 1.2;
+        max-width: 5.5em;
+    }
+
+    thead th:nth-child(3) h2 {
+        font-size: 1.3em;
+        color: #b39f55;
+        padding: 0.6em;
+        max-width: 5.5em;
+    }
+    .prices__ad {
+        font-size: 0.95em;
+    }
+}

@@ -1,9 +1,12 @@
-.second-section {
-    background-color: #798da344;
+.center {
     margin-top: 2em;
     padding: 1em 0;
     text-align: center;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.second-section {
+    background-color: #798da344;
+
 }
 
 .AllService {
@@ -14,7 +17,6 @@
 .first-services,
 .second-services {
     width: 100%;
-
 }
 
 .second-section .row {
@@ -32,6 +34,7 @@
 
 .second-section .section-subtitle {
     color: #b39f55;
+    font-weight: 300;
     margin-top: 0.7em;
 }
 
