@@ -42,7 +42,7 @@ colgroup:nth-child(3) {
 }
 
 .AllPrices thead th {
-    background: linear-gradient(to bottom, #fff 20%, #798da344 100%);
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.027) 0%, #798da344 100%);
 
     text-align: center;
     border-bottom: 2px solid #798da344;
@@ -62,13 +62,13 @@ colgroup:nth-child(3) {
 }
 
 tbody tr:nth-child(even) th {
-    background: linear-gradient(to right, #fff 0%, #798da344 50%);
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.027) 0%, #798da344 100%);
 
     border-width: 1px 0 1px 1px;
 }
 
 tbody tr:nth-child(even) td {
-    background: linear-gradient(to right, #798da344 40%, #798da344 100%);
+    background: linear-gradient(to right, #798da341 20%, #798da3af 80%);
 
     border-width: 1px 0 1px 1px;
 }

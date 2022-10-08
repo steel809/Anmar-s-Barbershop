@@ -72,8 +72,16 @@
 
 .social_media__All a {
     margin: 0 1em;
+    text-decoration: none;
 }
 
+.fab,
+.fa-brands,
+.fa-phone {
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+}
 
 @media (min-width: 1150px) {
 
