@@ -59,7 +59,7 @@ body {
     /*!responsive aspekte */
     visibility: hidden;
     height: 0;
-    position: absolute;
+    /* position: absolute; */
 
     margin-top: 2em;
 }
@@ -265,7 +265,7 @@ body {
 }
 
 /**wirkt sobald dies größer als 800px ist */
-@media (min-width: 1143px) {
+@media (min-width: 1183px) {
     .nav-toggle {
         display: none;
     }

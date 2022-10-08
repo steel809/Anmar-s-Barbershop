@@ -10,9 +10,22 @@
 .first-section .shape {
     stroke: #798da3;
     stroke-width: 4px;
-    stroke-dasharray: 16;
+    stroke-dasharray: 5;
     stroke-dashoffset: 0;
 }
+
+.barbers-list div {
+    margin: 0 auto;
+}
+
+.barbers-list {
+    display: flex;
+    width: 100%;
+    padding-top: 2em;
+    align-items: center;
+
+}
+
 
 /**BarberPole-Animation */
 
@@ -107,6 +120,16 @@
         cursive;
     overflow: visible;
 }
+
+
+
+
+@media (max-width: 1193px) {
+    .barbers-list {
+        display: block;
+    }
+}
+
 
 @media (max-width: 800px) {
     .first-section__descriptionBox {
