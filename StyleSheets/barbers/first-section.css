@@ -133,7 +133,7 @@
 
 @media (max-width: 800px) {
     .first-section__descriptionBox {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
