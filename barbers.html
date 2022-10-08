@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./StyleSheets/general.css">
     <link rel="stylesheet" href="./StyleSheets/landing-page.css">
     <link rel="stylesheet" href="./StyleSheets/footer.css">
+    <link rel="stylesheet" href="./StyleSheets/barbers/first-section.css">
 
 
 
@@ -28,7 +30,7 @@
                     <span class="hamburger"></span>
                 </button>
 
-                <a class="logo" href="#">
+                <a class="logo">
                     <img src="img/logo.svg" alt="Logo">
                 </a>
             </div>
@@ -47,12 +49,12 @@
                         </a>
                     </div>
                     <div class="svg-wrapper nav__item">
-                        <a href="#">
+                        <a>
                             <svg height="100%" width="100%">
                                 <!-- Rechteck gebildet mit rect -->
                                 <rect class="shape" height="100%" width="100%" />
                                 <header class="landing-page">
-                                    <div class="text"><a class="landing-page__nav__links" href="#">Jobs</a>
+                                    <div class="text"><a class="landing-page__nav__links">Jobs</a>
                                     </div>
                             </svg>
                         </a>
@@ -63,7 +65,8 @@
                                 <!-- Rechteck gebildet mit rect -->
                                 <rect class="shape" height="100%" width="100%" />
                                 <header class="landing-page">
-                                    <div class="text"><a class="landing-page__nav__links" href="barbers.html">Barbers</a>
+                                    <div class="text"><a class="landing-page__nav__links"
+                                            href="barbers.html">Barbers</a>
                                     </div>
                             </svg>
                         </a>
@@ -79,12 +82,10 @@
                             </svg>
                         </a>
                     </div>
-
-
                 </div>
                 <div class="nav__list--secondary">
                     <div class="svg-wrapper nav__item ">
-                        <a href="#">
+                        <a>
                             <svg height="100%" width="100%">
                                 <!-- Rechteck gebildet mit rect -->
                                 <rect class="shape" height="100%" width="100%" />
@@ -112,7 +113,7 @@
                             <stop offset="100%" stop-color="transparent" />
                         </linearGradient>
                     </defs>
-                    <div class="text"><a class="landing-page__nav__links" href="#">Termin Buchen!</a></div>
+                    <div class="text"><a class="landing-page__nav__links">Termin Buchen!</a></div>
                 </svg>
             </div>
         </div>
@@ -120,31 +121,87 @@
     </header>
 
     <section class="first-section center">
-        <div class="container row">
-            <div class="col">
-                <h2 class="section-title">Herzlich Willkommen</h2>
-                <h3 class="section-subtitle">Bei Anmar's Barber Shop</h3>
-                <div class="divider"></div>
-                <p class="first-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem
-                    iure dicta maxime, praesentium
-                    vitae minus temporibus numquam rerum cum aliquam. Ipsum repudiandae dicta labore!</p>
+        <div class="container">
+            <h2 class="section-title">Darf ich vorstellen</h2>
+            <h3 class="section-subtitle">Bei uns im Hause sind...</h3>
+            <div class="divider"></div>
+            <div class="nav">
 
-                <div class="social-media">
-                    <div class="social_media__All">
-
-
-
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-brands fa-instagram"></i>
-                            <span></span>
-                        </a>
-                        <a href="https://www.facebook.com" target="_blank"> <span><i class="fa fab fa-facebook"></i>
-                            </span></a>
-
-                    </div>
+                <div class="svg-wrapper nav__item barbers" id="1">
+                    <a>
+                        <svg height="100%" width="100%">
+                            <!-- Rechteck gebildet mit rect -->
+                            <rect class="shape" height="100%" width="100%" />
+                            <header class="landing-page">
+                                <div class="text"><a class="landing-page__nav__links">Anmar</a>
+                                </div>
+                        </svg>
+                    </a>
+                </div>
+                <div class="svg-wrapper nav__item barbers" id="2">
+                    <a>
+                        <svg height="100%" width="100%">
+                            <!-- Rechteck gebildet mit rect -->
+                            <rect class="shape" height="100%" width="100%" />
+                            <header class="landing-page">
+                                <div class="text"><a class="landing-page__nav__links">ali</a>
+                                </div>
+                        </svg>
+                    </a>
+                </div>
+                <div class="svg-wrapper nav__item barbers" id="3">
+                    <a>
+                        <svg height="100%" width="100%">
+                            <!-- Rechteck gebildet mit rect -->
+                            <rect class="shape" height="100%" width="100%" />
+                            <header class="landing-page">
+                                <div class="text"><a class="landing-page__nav__links">Daniel</a>
+                                </div>
+                        </svg>
+                    </a>
+                </div>
+                <div class="svg-wrapper nav__item barbers" id="4">
+                    <a>
+                        <svg height="100%" width="100%">
+                            <!-- Rechteck gebildet mit rect -->
+                            <rect class="shape" height="100%" width="100%" />
+                            <header class="landing-page">
+                                <div class="text"><a class="landing-page__nav__links">Dilara</a>
+                                </div>
+                        </svg>
+                    </a>
+                </div>
+                <div class="svg-wrapper nav__item barbers" id="5">
+                    <a>
+                        <svg height="100%" width="100%">
+                            <!-- Rechteck gebildet mit rect -->
+                            <rect class="shape" height="100%" width="100%" />
+                            <div class="text"><a class="landing-page__nav__links">Jonas</a>
+                            </div>
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="col">
-                <img class="TeamPicture" src="img/TeamPic.jpg" alt="TeamPicture">
+
+            <div class="first-section__descriptionBox">
+                <div class="first-section__descriptionItems">
+
+                    <div class="first-section__profil FadeIn">
+
+                        <div class="first-section__name">
+                            <span class="nameOfWorker typewriter">
+                                Anmar
+                            </span>
+                            <br>
+                            <span class="jobDescription typewriter">
+                                Master Barber
+                            </span>
+                        </div>
+                        <img src="/img/barberer.png" alt="pictureOfWorker">
+
+                    </div>
+                    <div id="typedtext"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -153,254 +210,9 @@
         <div class="container">
             <h2 class="section-title">Leistungen</h2>
             <div class="AllService">
-                <div class="first-services row">
 
-                    <div class="col">
-                        <img src="img/FreshCut-modified.png" alt="styling hair">
-
-                        <h3 class="section-subtitle">Haarschnitt</h3>
-                    </div>
-                    <div class="col">
-                        <img src="img/BeardCut-modified.png" alt="styling beard">
-
-                        <h3 class="section-subtitle">Bart</h3>
-                    </div>
-                </div>
-                <div class="second-services row">
-
-                    <div class="col">
-                        <img src="img/eyebrows-barber-shop-modified.png" alt="styling Eyebrows">
-
-                        <h3 class="section-subtitle">Augenbrauen</h3>
-                    </div>
-                    <div class="col">
-                        <img src="img/sonstiges-modified.png" alt="OtherStylings">
-                        <h3 class="section-subtitle">Sonstiges</h3>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
-
-    <section class="price-section center">
-        <div class="container">
-            <h2 class="section-title">Preise</h2>
-            <div class="AllPrices">
-                <div class="row">
-                    <div class="price__element">
-                        <h3 class="section-subtitle">Haarschnitt</h3>
-                        <table>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>
-                                        <h2>Top Barber</h2>
-                                    </th>
-                                    <th class="master-barber">
-                                        <h2>Master Barber</h2>
-                                        <div class="special-moments">
-                                            <svg viewBox="2 2.69 3 2.65">
-                                                <path
-                                                    d="M 2 3 L 2 3 C 3 2 4 4 5 3 L 5 5 C 4 6 3 4 2 5 C 2 4.3333 2 3.6667 2 3" />
-                                                <div class="prices__ad">
-                                                    <p>Für besondere Momente</p>
-                                                </div>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <div class="farbig">
-                                    <tr>
-                                        <th>Herren</th>
-                                        <td>20€</td>
-                                        <td>30€</td>
-                                    </tr>
-                                </div>
-                                <tr>
-                                    <th>Studenten/Rentner</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Kinder (0-12 Jahren)</th>
-                                    <td>20€</td>
-                                    <td>&mdash;</td>
-                                </tr>
-                                <tr>
-                                    <th>Maschinenhaarschnitt (eine Länge)</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="price__element">
-                        <h3 class="section-subtitle">Bart</h3>
-                        <table>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>
-                                        <h2>Top Barber</h2>
-                                    </th>
-                                    <th class="master-barber">
-                                        <h2>Master Barber</h2>
-                                        <div class="special-moments">
-                                            <svg viewBox="2 2.69 3 2.65">
-                                                <path
-                                                    d="M 2 3 L 2 3 C 3 2 4 4 5 3 L 5 5 C 4 6 3 4 2 5 C 2 4.3333 2 3.6667 2 3" />
-                                                <div class="prices__ad">
-                                                    <p>Für besondere Momente</p>
-                                                </div>
-                                            </svg>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>Herren</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Studenten/Rentner</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Kinder (0-12 Jahren)</th>
-                                    <td>20€</td>
-                                    <td>&mdash;</td>
-                                </tr>
-                                <tr>
-                                    <th>Maschinenhaarschnitt (eine Länge)</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="price__element">
-                        <h3 class="section-subtitle">Sonstiges</h3>
-                        <table>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>
-                                        <h2>Top Barber</h2>
-                                    </th>
-                                    <th class="master-barber">
-                                        <h2>Master Barber</h2>
-                                        <div class="special-moments">
-                                            <svg viewBox="2 2.69 3 2.65">
-                                                <path
-                                                    d="M 2 3 L 2 3 C 3 2 4 4 5 3 L 5 5 C 4 6 3 4 2 5 C 2 4.3333 2 3.6667 2 3" />
-                                                <div class="prices__ad">
-                                                    <p>Für besondere Momente</p>
-                                                </div>
-                                            </svg>
-                                        </div>
-
-                                    </th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <th>Herren</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Studenten/Rentner</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Kinder (0-12 Jahren)</th>
-                                    <td>20€</td>
-                                    <td>&mdash;</td>
-                                </tr>
-                                <tr>
-                                    <th>Maschinenhaarschnitt (eine Länge)</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="price__element">
-                        <h3 class="section-subtitle">Pakete</h3>
-                        <table>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-                            <colgroup></colgroup>
-
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>
-                                        <h2>Top Barber</h2>
-                                    </th>
-                                    <th class="master-barber">
-                                        <h2>Master Barber</h2>
-                                        <div class="special-moments">
-                                            <svg viewBox="2 2.69 3 2.65">
-                                                <path
-                                                    d="M 2 3 L 2 3 C 3 2 4 4 5 3 L 5 5 C 4 6 3 4 2 5 C 2 4.3333 2 3.6667 2 3" />
-                                                <div class="prices__ad">
-                                                    <p>Für besondere Momente</p>
-                                                </div>
-                                            </svg>
-                                        </div>
-
-                                    </th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <th>Herren</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Studenten/Rentner</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                                <tr>
-                                    <th>Kinder (0-12 Jahren)</th>
-                                    <td>20€</td>
-                                    <td>&mdash;</td>
-                                </tr>
-                                <tr>
-                                    <th>Maschinenhaarschnitt (eine Länge)</th>
-                                    <td>20€</td>
-                                    <td>30€</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section class="footer-contact center">
@@ -461,8 +273,10 @@
 
     <!-- <div style="height: 40rem;"></div> -->
 </body>
-<script src="/JS/main.js"></script>
-<script src="/JS/movingPicture.js"></script>
-<script src="/JS/scrollToServices.js"></script>
+<!-- <script src="/JS/main.js"></script> -->
+<!-- <script src="/JS/movingPicture.js"></script>
+<script src="/JS/scrollToServices.js"></script> -->
+<script type="module" src="/JS/typewriter.js"></script>
+
 
 </html>

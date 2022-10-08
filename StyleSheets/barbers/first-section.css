@@ -1,0 +1,121 @@
+.first-section {
+    text-align: left;
+}
+
+.first-section .landing-page__nav__links {
+    color: #798da3;
+    text-align: center;
+}
+
+.first-section .shape {
+    stroke: #798da3;
+    stroke-width: 4px;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 0;
+}
+
+/**BarberPole-Animation */
+
+.first-section__descriptionItems {
+    /*beinhaltet die Items und stellt den Hintergrund auf weiß, ohne diesen wäre das gesamte Ding mit dem Pole versehen */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    z-index: 2;
+    padding: 2em;
+    text-align: center;
+}
+
+.first-section__descriptionBox {
+    max-width: 65%;
+    height: 100%;
+    display: flex;
+    padding: 1em;
+    position: relative;
+    overflow: hidden;
+    margin: 2em auto;
+
+}
+
+.first-section__descriptionBox::before {
+    content: "";
+    position: absolute;
+    width: 100em;
+    height: 100em;
+    background: repeating-linear-gradient(white 0%,
+            white 7.5px,
+            red 7.5px,
+            red 15px,
+            blue 15px,
+            blue 22.5px);
+    ;
+    transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+    animation: barberPole 10s linear infinite;
+}
+
+
+.first-section__descriptionBox,
+.first-section__descriptionItems {
+    box-shadow: 0 0 2px deeppink, 0 0 5px rgba(0, 0, 0, 1), inset 0 0 5px rgba(0, 0, 0, 1);
+    border-radius: 14px;
+}
+
+@keyframes barberPole {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: 0 500px;
+    }
+}
+
+.first-section__profil img {
+    width: 15em;
+}
+
+.first-section__name {
+    letter-spacing: 0.5em;
+    padding-bottom: 1.3em;
+    font-size: 1.3em;
+}
+
+.jobDescription {
+    font-weight: bold;
+    color: #798da3;
+}
+
+.FadeIn {
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.first-section__quote {
+    width: auto;
+    font-size: 1.6em;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+/**Getipptes Quote wiedergeben */
+
+#typedtext {
+    width: auto;
+    font-size: 1.6em;
+    font-family: 'Waiting for the Sunrise',
+    cursive;
+    overflow: visible;
+}

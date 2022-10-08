@@ -3,6 +3,7 @@ import {
   workingPeople
 } from './arbeiter.js'
 const dataOfWorkers = workingPeople[0];
+console.log(dataOfWorkers)
 
 let quote = document.getElementsByClassName('quote');
 let nameOfWorker = document.getElementsByClassName('nameOfWorker');

@@ -1,0 +1,39 @@
+*,
+*::before {
+    box-sizing: border-box;
+}
+
+.divider {
+    border-top: #b39f55 solid 2.8px;
+    height: 3px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size_: 1.3rem;
+}
+
+.center {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.section-title {
+    letter-spacing: 0.25em;
+    color: #b39f55;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.125em;
+}
+
+.section-subtitle {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #798da3;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
