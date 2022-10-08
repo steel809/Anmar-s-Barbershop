@@ -166,8 +166,15 @@ body {
     color: #d3ba60d1;
 }
 
+/** Gestaltung der Vierecke um Nav */
 .active .shape {
     stroke: #d3ba60d1;
+}
+
+.svg-wrapper a {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .svg-wrapper {
