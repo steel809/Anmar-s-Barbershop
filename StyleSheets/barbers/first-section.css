@@ -29,14 +29,13 @@
 }
 
 .first-section__descriptionBox {
-    max-width: 65%;
+    width: 68%;
     height: 100%;
     display: flex;
     padding: 1em;
     position: relative;
     overflow: hidden;
     margin: 2em auto;
-
 }
 
 .first-section__descriptionBox::before {
@@ -101,21 +100,34 @@
     }
 }
 
-.first-section__quote {
-    width: auto;
-    font-size: 1.6em;
-    font-style: italic;
-    white-space: nowrap;
-    overflow: hidden;
-
-}
-
-/**Getipptes Quote wiedergeben */
-
 #typedtext {
     width: auto;
     font-size: 1.6em;
     font-family: 'Waiting for the Sunrise',
-    cursive;
+        cursive;
     overflow: visible;
+}
+
+@media (max-width: 800px) {
+    .first-section__descriptionBox {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    #typedtext {
+        font-size: 1.3em;
+    }
+
+    .first-section__descriptionItems {
+        padding: 1em 0.4em;
+    }
+
+    .first-section__profil img {
+        width: 80%;
+    }
+
+    .first-section__name {
+        font-size: 1.1em;
+    }
 }
