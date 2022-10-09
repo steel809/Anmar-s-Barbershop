@@ -1,9 +1,9 @@
 .second-section {
-    background-color: rgba(128, 128, 128, 0.113);
+    background-color: #798da344;
     min-height: 10em;
 }
 
-.AllService {
+.second-section__services {
     margin: 1.5em;
     display: flex;
 }
