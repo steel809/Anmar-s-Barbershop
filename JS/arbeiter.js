@@ -6,8 +6,9 @@ const workingPeople = [{
         "firstName": "Anmar",
         "jobDescription": "Master Barber",
         "quote": [
-            "\"My life is like...",
-            "My life is like...\""
+            "\"Ich bin ein Mann des Glücks",
+            "und ich muss mein Glück suchen\"", 
+            "~ Henry Avery"
         ],
         "picture": "img/barberer.png"
     }],

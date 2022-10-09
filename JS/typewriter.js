@@ -8,15 +8,17 @@ let nameOfWorker = document.querySelector(".nameOfWorker");
 let jobDescription = document.querySelector(".jobDescription");
 let pictureOfWorker = document.querySelector(".barber-picture");
 
-// set up text to print, each item in array is new line
-var aText = new Array(
-    "There are only 10 types of people in the world:",
-    "Those who understand binary, and those who don't"
-);
+// Standard
+var quote = dataOfWorkers[1][0].quote;
+nameOfWorker.textContent = dataOfWorkers[1][0].firstName;
+jobDescription.textContent = dataOfWorkers[1][0].jobDescription;
+pictureOfWorker.src = dataOfWorkers[1][0].picture;
 
-var iSpeed = 20; // time delay of print out
+// set up text to print, each item in array is new line
+
+var writingSpeed = 30; // time delay of print out
 var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
+var ArrLength = quote[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
 
 var iTextPos = 0; // initialise text position
@@ -28,23 +30,23 @@ function typewriter() {
     iRow = Math.max(0, iIndex - iScrollAt);
     var destination = document.getElementById("typedtext");
     while (iRow < iIndex) {
-        sContents += aText[iRow++] + '<br />';
+        sContents += quote[iRow++] + '<br />';
     }
 
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+    destination.innerHTML = sContents + quote[iIndex].substring(0, iTextPos);
 
-    if (iTextPos++ == iArrLength) {
+    if (iTextPos++ == ArrLength) {
         iTextPos = 0;
 
         iIndex++;
-        if (iIndex < aText.length) {
-            iArrLength = aText[iIndex].length;
+        if (iIndex < quote.length) {
+            ArrLength = quote[iIndex].length;
             // next line
             setTimeout(typewriter, 10)
         }
-    } else if (iIndex < aText.length) {
-        iArrLength = aText[iIndex].length;
-        setTimeout(typewriter, iSpeed)
+    } else if (iIndex < quote.length) {
+        ArrLength = quote[iIndex].length;
+        setTimeout(typewriter, writingSpeed)
     }
 }
 
@@ -58,7 +60,7 @@ function changingTeamDescription(dude) {
     jobDescription.textContent = dataOfWorkers[id][0].jobDescription;
     pictureOfWorker.src = dataOfWorkers[id][0].picture;
 
-    aText = dataOfWorkers[id][0].quote;
+    quote = dataOfWorkers[id][0].quote;
     iIndex = 0;
     typewriter();
 }
