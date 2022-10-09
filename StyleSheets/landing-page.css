@@ -297,16 +297,31 @@ body {
     .welcome-quote .landing-page__nav__links {
         font-size: 1.1em;
     }
+
+    .welcome-quote__place-for-men {
+        font-size: 6.5vw;
+    }
+
+    .welcome-quote__place-for-men span {
+        font-size: 4.8vw;
+    }
+
+    .welcome-quote .svg-wrapper {
+        height: 7em;
+        width: 17em;
+    }
 }
 
 @media (max-width: 430px) {
     .welcome-quote .svg-wrapper {
-        height: 8em;
-        width: 15em;
+        height: 6em;
+        width: 12em;
     }
 
     .welcome-quote .landing-page__nav__links {
-        font-size: 1.2em;
+        font-size: 1em;
     }
+
+    
 
 }

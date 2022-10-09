@@ -141,7 +141,7 @@ th svg {
 
     .AllPrices th,
     .AllPrices td {
-        font-size: .765em;
+        font-size: .7em;
         line-height: 1.45em;
         padding: 0.5em;
     }
@@ -161,5 +161,9 @@ th svg {
 
     .prices__ad {
         font-size: 0.95em;
+    }
+
+    .price__element {
+        width: 100%;
     }
 }

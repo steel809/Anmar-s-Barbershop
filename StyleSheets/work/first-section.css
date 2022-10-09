@@ -34,13 +34,30 @@
 }
 
 .col {
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
+.col .first-section__center {
+    margin: 0 auto;
+}
+
 @media (max-width: 600px) {
+
     .first-section__criterias {
         display: block;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .section-subtitle {
+        font-size: 1.2em;
+    }
+
+    .first-section__header {
+        font-size: 1em;
     }
 }

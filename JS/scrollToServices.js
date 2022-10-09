@@ -1,4 +1,4 @@
-var scrollToService = document.querySelector('.clickService');
+
 var scrollToPricing = document.querySelector('.clickPricing');
 
 function ScrollToElement(elementName) {
@@ -7,15 +7,9 @@ function ScrollToElement(elementName) {
     }, 2000);
 }
 
-
-if (scrollToService) {
-    scrollToService.addEventListener('click', () => {
-        ScrollToElement('.services');
-    });
-}
 if (scrollToPricing) {
     scrollToPricing.addEventListener('click', () => {
-        ScrollToElement('.pricing');
+        ScrollToElement('.price-section');
 
     });
 }

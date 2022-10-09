@@ -63,6 +63,7 @@
 }
 
 @media (max-width: 850px) {
+
     .footer-contact .row {
         flex-direction: column;
 
