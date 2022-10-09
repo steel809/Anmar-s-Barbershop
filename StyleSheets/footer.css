@@ -1,6 +1,6 @@
 .footer-contact {
     text-align: left;
-    background-color: #513f40;
+    background-color: #333d47;
 }
 
 .footer-contact .row {
@@ -25,14 +25,13 @@
 .footer-contact__icons .fa-phone {
     text-decoration: none;
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .footer-contact__text,
 .copyright__text {
     color: #BCAAA4;
     line-height: 1.5em;
-
 }
 
 .footer-contact .section-title {
@@ -54,13 +53,13 @@
 }
 
 .footer-contact__highlight {
+    color: #BCAAA4;
     font-weight: 500;
-    color: black;
 }
 
 .footer-copyright-claim {
     text-align: left;
-    background-color: #453536;
+    background-color: #2b333b;
 }
 
 @media (max-width: 850px) {

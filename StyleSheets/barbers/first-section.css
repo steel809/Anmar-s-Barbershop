@@ -116,13 +116,9 @@
 #typedtext {
     width: auto;
     font-size: 1.6em;
-    font-family: 'Waiting for the Sunrise',
-        cursive;
+    font-family: 'Great Vibes', cursive;
     overflow: visible;
 }
-
-
-
 
 @media (max-width: 1193px) {
     .barbers-list {
