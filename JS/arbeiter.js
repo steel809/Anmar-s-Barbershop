@@ -25,7 +25,7 @@ const workingPeople = [{
     ],
     "3": [{
             "id": "3",
-            "firstName": "Dilara",
+            "firstName": "Daniel",
             "jobDescription": "Barber",
             "quote": [
                 "\"I like people to be happy\""
@@ -36,7 +36,7 @@ const workingPeople = [{
     ],
     "4": [{
             "id": "4",
-            "firstName": "Daniel",
+            "firstName": "Dilara",
             "jobDescription": "Social Media Expert",
             "quote": [
                 "\"Thankfullness is what keeps me pushing\""
