@@ -4,6 +4,10 @@ import {
 const dataOfWorkers = workingPeople[0];
 const worker = document.querySelectorAll('.barbers');
 
+let nameOfWorker = document.querySelector(".nameOfWorker");
+let jobDescription = document.querySelector(".jobDescription");
+let pictureOfWorker = document.querySelector(".barber-picture");
+
 // set up text to print, each item in array is new line
 var aText = new Array(
     "There are only 10 types of people in the world:",
@@ -26,7 +30,7 @@ function typewriter() {
     while (iRow < iIndex) {
         sContents += aText[iRow++] + '<br />';
     }
-    console.log(aText[iIndex].substring(0, iTextPos))
+
     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
 
     if (iTextPos++ == iArrLength) {
@@ -49,6 +53,11 @@ typewriter();
 
 function changingTeamDescription(dude) {
     const id = parseInt(dude.id);
+
+    nameOfWorker.textContent = dataOfWorkers[id][0].firstName;
+    jobDescription.textContent = dataOfWorkers[id][0].jobDescription;
+    pictureOfWorker.src = dataOfWorkers[id][0].picture;
+
     aText = dataOfWorkers[id][0].quote;
     iIndex = 0;
     typewriter();

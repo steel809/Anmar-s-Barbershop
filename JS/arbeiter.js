@@ -43,6 +43,17 @@ const workingPeople = [{
             "picture": "img/BeardCut-modified.png"
         }
 
+    ],
+    "5": [{
+            "id": "5",
+            "firstName": "Jonas",
+            "jobDescription": "Briefträger",
+            "quote": [
+                "\"I like trains\""
+            ],
+            "picture": "img/equipment.webp"
+        }
+
     ]
 
 }]
