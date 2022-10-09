@@ -1,0 +1,60 @@
+.second-section {
+    background-color: rgba(128, 128, 128, 0.113);
+    min-height: 10em;
+}
+
+.AllService {
+    margin: 1.5em;
+    display: flex;
+}
+
+.mailToButton {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.second-section__text {
+    color: black;
+    font-size: 1.7em;
+    margin-left: 0.5em;
+
+}
+
+.fas {
+    color: black;
+    font-size: 1.3em;
+}
+
+.mailButton {
+    display: flex;
+    border: #798da3 solid 3px;
+    background-color: #798da3;
+    padding: 1em;
+    border-radius: 25px;
+    width: fit-content;
+    align-items: center;
+}
+
+@media (max-width: 475px) {
+    .second-section__text {
+        font-size: 1.2em;
+    }
+
+    .fas {
+        font-size: 1em;
+    }
+
+    .mailButton {
+        width: 100%;
+    }
+}
+
+@media (max-width: 340px) {
+    .second-section__text {
+        font-size: 0.95em;
+    }
+
+    .fas {
+        font-size: 0.8em;
+    }
+}
