@@ -1,0 +1,14 @@
+.first-section .section-title{
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-size: 1.6em; 
+}
+
+.first-section__text {
+    width: 80%;
+    overflow-wrap: break-word;
+    text-align: left;
+    line-height: 1.4em;
+    font-weight: 300;
+    letter-spacing: 0.09em;
+}
