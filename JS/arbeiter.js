@@ -15,7 +15,7 @@ const workingPeople = [{
     "2": [{
             "id": "2",
             "firstName": "Ali",
-            "jobDescription": "Barber",
+            "jobDescription": "Top Barber",
             "quote": [
                 "\"Cutting har is like...\""
             ],
@@ -26,7 +26,7 @@ const workingPeople = [{
     "3": [{
             "id": "3",
             "firstName": "Daniel",
-            "jobDescription": "Barber",
+            "jobDescription": "Top Barber",
             "quote": [
                 "\"I like people to be happy\""
             ],
