@@ -114,7 +114,7 @@ body {
     color: white;
     transition: opacity 250ms ease;
 
-    display: block;
+
     position: absolute;
     left: 0;
 }
@@ -154,7 +154,7 @@ body {
 
 
 .welcome-quote__place-for-men {
-    color: #fff;
+    color: white;
     font-weight: 900;
     letter-spacing: 8px;
     font-size: 5vw;

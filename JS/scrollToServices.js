@@ -26,7 +26,6 @@ var jump = function (e) {
     }
 
     $('html,body').animate(
-        console.log(location.hash),
         ScrollToElement(location.hash),
         function () {
             location.hash = target;
